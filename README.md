@@ -22,7 +22,7 @@ https://www.w3schools.com/bootstrap4
 <li>
 Creati o pagina web folosind biblioteca Bootstrap care sa contina cel putin 5 elemente de control specific formularelor. https://getbootstrap.com
 </li>
-<ol>
+</ol>
 
 ## Lab 2
 <ol>
@@ -45,4 +45,4 @@ De exemplu: puteti modela o lista de calatorii pentru vacanta.
 Calatoria poate avea ca si atribute data de plecare, data de sosire, adresa de cazare, lista de adrese de vizitat, costuri de cazare, lista de preturi meniu restaurant etc.
 </li>
 
-<ol>
+</ol>
