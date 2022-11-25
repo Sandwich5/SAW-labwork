@@ -1,0 +1,242 @@
+<!--
+    Parcurgeti capitolele tutorialului pana la HTML forms inclusiv.
+    Salvati 7 exemple de cod intr-un fisier care sa fie functional in browser.
+    Aplicati cel putin o modificare la codul existent.
+    https://www.w3schools.com/html
+
+    Exemplu 1: HTML Elements + am adaugat <head>
+    Exemplu 2: HTML Styles + un div cu mai multe formatari fancy
+    Exemplu 3: HTML Links + un link cu target:_blank
+    Exemplu 4: HTML Tables dar cu un tabel cu filme
+    Exemplu 5: HTML Forms impartite in 2 coloane: unul basic, unul radial button
+    Exemplu 6: HTML Emojis + slider bar and some inline JS code
+    Exemplu 7: HTML Images + different paths and organized in a 3 div coloumns and same size
+    
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laborator SAW</title>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    } 
+</style>
+</head>
+
+<body>
+    <h1>First Example: a heading</h1>
+    <p>
+        My first paragraph.
+    </p>
+    <p>
+        This is a second paragraph, from the first example. It is <i>better</i>!
+    </p>
+    <hr>
+    
+    
+    <h1>Second Example</h1>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+    <div style="
+        background-color:powderblue;
+        color:red;
+        font-size:160%;
+        text-align:center;
+        ">
+        And very <b>centered</b> and <u>colorful</u> <code>div</code>.
+    </div>
+    <hr>
+    
+    
+    <h1>Third Example</h1>
+    <p>
+        <a href="https://www.w3schools.com/html/html_links.asp">
+            Link luat de aici
+        </a>
+    </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+           target="_blank">
+            A very important link!
+        </a>
+    <hr>
+    
+    
+    <h1>Fourth Example</h1>
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>Titlu</th>
+            <th>Regizor</th>
+            <th>Anul Aparitiei</th>
+            <th>Durata</th>
+        </tr>
+        <tr>
+            <td>As Above, So Below</td>
+            <td>John Erick Dowdle</td>
+            <td>29 August 2014</td>
+            <td>1h 33m</td>
+        </tr>
+        <tr>
+            <td>Annihilation</td>
+            <td>Alex Garland</td>
+            <td>23 Februarie 2018</td>
+            <td>1h 55m</td>
+        </tr>
+        <tr>
+            <td>The Babadook</td>
+            <td>Jennifer Kent</td>
+            <td>17 Ianuarie 2014</td>
+            <td>1h 34m</td>
+        </tr>
+        <tr>
+            <td>The Void</td>
+            <td>Jeremy Gillespie, Steven Kostanski</td>
+            <td>22 Septembrie 2017</td>
+            <td>1h 30m</td>
+        </tr>
+    </table>
+    <hr>
+    
+    
+    <h1>Fifth Example</h1>
+    
+    <div class="grid-container">
+
+        <div class="grid-child purple">
+            <div style="text-align:center;">
+                <h2>
+                    Form 1
+                <h2>
+            </div>
+            <div>
+                <form>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname">
+                </form>
+            </div>
+        </div>
+
+        <div class="grid-child green">
+            <div style="text-align:center;">
+                <h2>
+                    Form 2
+                <h2>
+            </div>
+            <div>
+                <form>
+                  <input type="radio" id="radial_1" name="fav_language" value="HTML">
+                  <label for="radial_1" id="label_radial_1">HTML</label><br>
+                  
+                  <input type="radio" id="radial_2" name="fav_language" value="CSS">
+                  <label for="radial_2" id="label_radial_1">CSS</label><br>
+                  
+                  <input type="radio" id="radial_3" name="fav_language" value="JavaScript">
+                  <label for="radial_3" id="label_radial_1">JavaScript</label><br>
+                  
+                  <input type="radio" id="radial_4" name="fav_language" value="cplusplus">
+                  <label for="radial_4" id="label_radial_1">C++</label>
+                </form>
+            </div>
+        </div>
+  
+    </div>
+    
+    <br><hr>
+    
+    
+    <h1>Sixth Example</h1>
+    <h2>The awesome slider</h2>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="85" value="0" class="slider" id="myRange">
+      <p id="demo"> &nbsp </p>
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        slider.oninput = function() {
+          console.log(this.value);
+          if (this.value == "0")
+          {
+          output.innerHTML = "&nbsp";
+          }
+          else
+          {
+            var emojis = [
+                '😄','😃','😀','😊','☺','😉','😍','😘','😚','😗','😙','😜','😝','😛','😳','😁','😔','😌','😒','😞','😣','😢','😂','😭','😪','😥','😰','😅','😓','😩','😫','😨','😱','😠','😡','😤','😖','😆','😋','😷','😎','😴','😵','😲','😟','😦','😧','😈','👿','😮','😬','😐','😕','😯','😶','😇','😏','😑','👲','👳','👮','👷','💂','👶','👦','👧','👨','👩','👴','👵','👱','👼','👸','😺','😸','😻','😽','😼','🙀','😿','😹','😾','👹','👺','🙈','🙉','🙊','💀','👽','💩','🔥','✨','🌟','💫','💥','💢','💦','💧','💤','💨','👂','👀','👃','👅','👄','👍','👎','👌','👊','✊','✌','👋','✋','👐','👆','👇','👉','👈','🙌','🙏','☝','👏','💪','🚶','🏃','💃','👫','👪','👬','👭','💏','💑','👯','🙆','🙅','💁','🙋','💆','💇','💅','👰','🙎','🙍','🙇','🎩','👑','👒','👟','👞','👡','👠','👢','👕','👔','👚','👗','🎽','👖','👘','👙','💼','👜','👝','👛','👓','🎀','🌂','💄','💛','💙','💜','💚','❤','💔','💗','💓','💕','💖','💞','💘'];
+            var emojis_output = ""
+            for (let i = 1; i <= this.value; i++) {
+                emojis_output = emojis_output + emojis[Math.floor(Math.random() * emojis.length)];
+            }
+            output.innerHTML = emojis_output;
+          }
+        }
+    </script>
+    <hr>
+    
+    
+    <h1>Seventh Example</h1>
+        <h2>Three examples with images:</h2>
+        <div>
+            <ul>
+                <li>Local Image</li>
+                <li>Image from web (imgur)</li>
+                <li>GIF from web (giphy)</li>
+            </ul>
+        </div>
+        <div>
+           <div style="width: 33%; float: left;text-align:center;">
+               <img src="stepan.jpg"
+                    width="500"
+                    height="400"
+                    alt="Stepan with wine">
+               <p style="text-align:center;">
+                    Stepan with wine
+               </p>
+           </div>
+
+           <div style="width: 33%; float: left;text-align:center;">
+               <img src="https://i.imgur.com/savRpQ3.jpeg"
+                    width="500"
+                    height="400">
+                <p style="text-align:center;">
+                    Winnie meme
+                </p>
+           </div>
+           <div style="width: 34%; float: left;text-align:center;">
+               <img src="https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif" 
+                    alt="Cat Likes Music"
+                    width="500"
+                    height="400">
+                <p style="text-align:center;">
+                    Disco cat
+                </p>
+           </div> 
+           
+        </div>    
+    <br>
+    <hr>
+    <h1>Done!</h1>
+</body>
+</html>
