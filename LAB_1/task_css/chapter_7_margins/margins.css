@@ -1,0 +1,11 @@
+.center-with-margin {
+    margin: auto;
+}
+
+.bottom-margin {
+    margin-bottom: 100px
+}
+
+div {
+    width: inherit;
+}

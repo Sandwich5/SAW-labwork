@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://i.imgur.com/pVYS5Or.jpeg);
+    background-repeat: no-repeat;
+    background-position: center fixe;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    opacity: 1;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.base{
+    background-color: rgba(128,128,128,0.3);
+    /* border: 5px solid white; */
+    border-radius: 40px;
+}
+
+.center {
+    margin: 50px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

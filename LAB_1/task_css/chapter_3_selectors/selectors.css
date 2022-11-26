@@ -1,0 +1,15 @@
+p {
+    color: red;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.blue {
+    color: blue;
+}
+
+p.large {
+    font-size: xx-large;
+}

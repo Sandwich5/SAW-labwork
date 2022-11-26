@@ -1,0 +1,40 @@
+p {
+    padding: 5px;
+    font-size: large;
+}
+
+p.red-border {
+    border: 5px solid red;
+}
+
+p.yellow-border {
+    border: 5px solid yellow;
+}
+
+p.green-border {
+    border: 5px solid green;
+}
+
+p.lime-background {
+    background-color: lime;
+}
+
+p.tomato-background {
+    background-color: tomato;
+}
+
+p.lightblue-background {
+    background-color: lightblue;
+}
+
+p.darkblue-text {
+    color: darkblue;
+}
+
+p.gold-text {
+    color: gold;
+}
+
+p.brown-text {
+    color: brown;
+}
