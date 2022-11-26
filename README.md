@@ -1,6 +1,5 @@
 # SAW-labwork
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Sandwich5&repo=SAW-labwork)](https://github.com/Sandwich5/SAW-labwork)
 
 ## Lab 1
 <ol>
